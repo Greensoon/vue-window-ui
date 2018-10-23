@@ -1,0 +1,162 @@
+body {
+	.el {
+		&-header {
+			padding: 0;
+		}
+		&-menu {
+			background: none;
+			border: 0;
+		}
+
+		&-menu-item,
+		&-submenu__title {
+			color: #fff;
+			span {
+				color: #fff;
+			}
+
+			&:hover {
+				color: #fff;
+				background: #222;
+				span {
+					color: #fff;
+				}
+			}
+		}
+
+		&-menu-item {
+			&.is-active {
+				background: #222;
+				color: #fff;
+				
+				span {
+					color: #fff;
+				}
+			}
+		}
+
+		&-badge__content.is-fixed {
+			top: 15px;
+		}
+	}
+
+	.el-time-panel__content::before {
+		margin-top: -6px;
+	}
+
+	.el-time-panel__content::after {
+		display: none;
+	}
+
+	.el-tabs__content {
+		overflow: initial;
+	}
+
+	.el-table::before {
+		z-index: 0;
+	}
+
+	// .el-tabs__item {
+		// padding: 0 14px!important;
+	// }
+
+	// .el-select {
+	// 	.el-input__inner {
+	// 		border-radius: 0;
+	// 		height: 30px;
+	// 		line-height: 30px;
+	// 		font-size: 12px;
+	// 	}
+	// }
+	.el-select-dropdown {
+		border-radius: 0;
+		p, li {
+			font-size: 12px;
+		}
+	}
+
+	.el-form-item__label {
+		font-size: 12px;
+	}
+
+	.el-input__inner {
+		height: 30px;
+		line-height: 30px;
+		border-radius: 0;
+		font-size: 12px;
+	}
+
+	.el-button {
+		padding: 6px 10px;
+		border-radius: 0;
+		font-size: 12px;
+	}
+
+	/**
+	 * .table
+	 */
+	.el-table {
+		color: #333;
+		font-weight: 400;
+		thead th {
+			background: #f1f1f1;
+			font-size: 12px;
+		}
+
+		tbody td {
+			font-size: 12px;
+
+			.el-button {
+				&:first-child {
+					padding: 0;
+				}
+			}
+
+			.el-button--text {
+				padding: 0;
+			}
+		}
+	}
+
+	/**
+	 * .pagination
+	 */
+	.el-pagination {
+		padding-right: 0;
+
+		.btn-next {
+			margin-right: 0!important;
+		}
+	}
+
+	.el-input__icon {
+		line-height: 1;
+	}
+}
+
+.el-menu--vertical {
+	// display: block!important;
+
+	.el-menu--popup {
+		background: #42485b;
+	}
+
+	.el-menu-item-group__title {
+		height: 0;
+	}
+
+	.el-menu-item {
+		height: 35px;
+		line-height: 35px;
+	}
+}
+.main-side {
+	.el-menu--collapse {
+		&.main-menu {
+			.el-submenu__title {
+				text-align: center;
+				padding-left: 20px!important;
+			}
+		}
+	}
+}

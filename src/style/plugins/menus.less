@@ -1,0 +1,99 @@
+@import url(../color.less);
+.mu-menus {
+    .el-menu {
+        background: none;
+        border-right: 0;
+    }
+
+    .menu-height {
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+    }
+
+    .menu-hover {
+        color: #fff;
+        span {
+            color: #fff;
+        }
+        background: @home-menu-hover-bg;
+    }
+
+    .submenu-hover {
+        color: #fff;
+        background-color: @home-menu-subhover-bg;
+    }
+
+    .el-submenu {
+        &__title,
+        i {
+            color: #fff;
+            font-size: 12px;
+        }
+
+        &__title {
+            .menu-height;
+
+            background: @home-menu-bg;
+            &:hover {
+                .menu-hover;
+            }
+        }
+
+        .el-submenu__icon-arrow {
+            display: none;
+        }
+    }
+
+    .el-menu-item {
+        color: #fff;
+        .menu-height;
+
+        &.is-active {
+            background-color: @home-menu-hover-bg;
+            &:hover {
+                .menu-hover;
+            }
+        }
+
+        &:hover {
+            .submenu-hover;
+        }
+    }
+
+    .el-menu-item-group__title {
+        display: none;
+    }
+
+    .el-icon-caret-right {
+        transition: all 0.2s ease-in;
+    }
+
+    .is-opened {
+        .el-icon-caret-right {
+            transform: rotate(90deg);
+        }
+    }
+
+    .mu-menus-switch {
+        height: 30px;
+        background: @home-menu-head-bg;
+        color: #aeb9c2;
+        width: 100%;
+        line-height: 30px;
+        text-align: center;
+        cursor: pointer;
+
+        transition: all ease-in 0.2s;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.main-menu-toggle.el-icon-close {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}

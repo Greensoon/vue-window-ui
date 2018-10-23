@@ -1,0 +1,87 @@
+.ps-login {
+	position: absolute;
+	.auto-size;
+
+	&:before {
+		content: '';
+		background: url('@{assetUrl}img/login-bg.jpg') no-repeat center;
+		background-size: cover;
+		.auto-size;
+		position: absolute;
+	}
+
+	&-logo {
+		height: 40px;
+	}
+
+	.ps-login-form {
+		width: 400px;
+		height: 430px;
+		background: #fff;
+		position: absolute;
+
+		.middle-center;
+
+		padding: 30px 20px;
+		border-radius: 10px;
+		box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
+	}
+
+	.pslf-title {
+	    font-size: 22px;
+	    margin: 10px 0;
+	    color: #000;
+	}
+
+	.el-form-item {
+		&__label {
+			float: none;
+			line-height: 20px;
+			font-size: 10px
+		}
+
+		&__content {
+			margin-left: 0!important;
+		}
+	}
+
+	.ps-magtop {
+		margin-top: 60px;
+		//出现坍塌和折叠问题
+	}
+
+	.ps-login-btn {
+		width: 100%;
+
+		span {
+			color: #fff;
+		}
+	}
+
+	.ps-tip-link {
+		color: #303030;
+		float: right;
+
+		margin-left: 10px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.ps-tip-line {
+		.el-form-item__content {
+			line-height: 20px;
+		}
+
+		.el-checkbox__label,
+		.ps-tip-link {
+			font-size: 12px;
+		}
+	}
+}
+
+.ps-register {
+	.ps-login-form {
+		height: 520px;
+	}
+}

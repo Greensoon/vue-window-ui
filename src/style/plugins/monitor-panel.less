@@ -1,0 +1,40 @@
+.mu-monitor-panel {
+    &__title {
+        height: 40px;
+        background: #f8f9fb;
+        // background: #ddd;
+        border: 1px solid #ccc;
+        padding-left: 10px;
+        font-size: 12px;
+
+        position: relative;
+
+        &-text {
+            margin-top: 12px;
+        }
+
+        &-desc {
+            margin-top: 12px;
+
+            &-item {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &__content {
+        border: 1px solid #ccc;
+        border-top: 0;
+    }
+
+    &--settings {
+        position: absolute;
+        right: 10px;
+        margin: auto;
+        transform: translateY(-50%);
+        top: 50%;
+        font-size: 20px;
+
+        cursor: pointer;
+    }
+}

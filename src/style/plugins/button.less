@@ -1,0 +1,39 @@
+@import url(../color.less);
+
+	.mu-button {
+		display: inline-block;
+		.el-button {
+		    font-size: 12px;
+		    padding: 9px 20px;
+		    border-radius: 0;
+		    background-color: #f7f7f7;
+		}
+
+		.mu-hover-danger {
+			&:hover {
+				background: @danger;
+				color: #fff;
+				border-color: @danger;
+			}
+		}
+
+		.mu-hover-warn {
+			&:hover {
+				background: @warning;
+				color: #fff;
+				border-color: @warning;
+			}
+		}
+
+		&.mu-button-small {
+			.el-button {
+				padding: 5px 10px;
+			}
+		}
+
+		&.mu-button-middle {
+			.el-button {
+				padding: 10px;
+			}
+		}
+	}

@@ -1,0 +1,93 @@
+.mu-instance {
+    &-top {
+        padding: 3px 0;
+        border-bottom: 1px solid #ddd;
+        font-size: 24px;
+    }
+
+    .mu-miw-left {
+        width: percentage(1/3);
+        float: left;
+    }
+
+    .mu-miw-right {
+        width: percentage((1.9)/3);
+        float: right;
+    }
+
+    .mu-infobox {
+        background: #f8f9fb;
+        height: 192px;
+        margin: 10px 10px 0 0;
+
+        position: relative;
+
+        &-item {
+            position: absolute;
+            font-size: 12px;
+
+            &__link {
+                color: #06c;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &-computer {
+            top: 38%;
+            left: 5%;
+            background: url(../../../assets/img/ecs-relation-computer.png) 0 0 no-repeat;
+            width: 48px;
+            height: 46px;
+        }
+
+        &-rightline {
+            top: 28%;
+            left: 15%;
+            background: url(../../../assets/img/ecs-relation-rightline.png) 0 0 no-repeat;
+            width: 32px;
+            height: 72px;
+        }
+
+        &-disk {
+            top: 25%;
+            left: 22%;
+        }
+
+        &-snapshot {
+            top: 42%;
+            left: 22%;
+        }
+
+        &-image {
+            top: 60%;
+            left: 22%;
+        }
+
+        &-network {
+            top: 42%;
+            left: 50%;
+        }
+
+        &-status {
+            top: 25%;
+            left: 50%;
+        }
+    }
+
+    .mu-monitor {
+        .mu-wrap-block__content {
+            display: block;
+        }
+
+        .mu-wrap-content {
+            display: block;
+        }
+
+        .mu-wrap-block {
+            margin-bottom: 5px;
+        }
+    }
+}

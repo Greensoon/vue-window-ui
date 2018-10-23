@@ -1,0 +1,64 @@
+@bg: #434343;
+.mu-im {
+    width: 300px;
+    background: @bg;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 400px;
+    box-shadow: 0 0 5px 1px #000;
+
+    &__title {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .mu-im__content {
+        height: 370px;
+    }
+
+    .mu-im__content-display {
+        height: 320px;
+        overflow-y: auto;
+    }
+
+    .mu_im__status {
+        width: 15px;
+        border-radius: 100px;
+        height: 15px;
+        background: rgb(87,226,109);
+        margin: 7px;
+        display: inline-block;
+    }
+
+    .mu-im__typing {
+        display: inline-block;
+    }
+
+    .mu-im__close {
+        float: right;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        margin: 5px;
+        cursor: pointer;
+
+        &:before,
+        &:after {
+            content: '';
+            height: 15px;
+            width: 1px;
+            background: #fff;
+            position: absolute;
+        }
+
+        &:before {
+            transform: rotate(45deg);
+        }
+
+        &:after {
+            transform: rotate(-45deg);
+        }
+    }
+}

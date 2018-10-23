@@ -1,0 +1,154 @@
+body{
+    height: 100%;
+    width: 100%;
+    color: #333;
+    font-size: 12px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, i, b, textarea, button, input, select  {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    // color: #313131;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei";
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    &:focus {
+        outline: none;
+    }
+    outline: none;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+     -ms-text-size-adjust: 100%;
+}
+
+
+a {
+    cursor: pointer;
+    color: #06c;
+}
+
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clearfix{
+    zoom:1;
+}
+
+.back_img{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.margin{
+    margin: 0 auto;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.auto-size {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+.middle-center {
+    .auto-size;
+    margin: auto;
+}
+
+.middle {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.center {
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*list*/
+.mu {
+    &-infoitem {
+        height: 40px;
+        line-height: 40px;
+        border-left: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        border-right: 1px solid #eee;
+        font-size: 12px;
+        padding: 0 20px;
+    }
+
+    &-info--label {
+        color: #999;
+    }
+
+    &-info--value {
+        // font-family: "Helvetica Neue",
+        //             "Luxi Sans",
+        //             "DejaVu Sans",
+        //             Tahoma,
+        //             "Hiragino Sans GB",
+        //             STHeiti, "Microsoft YaHei";
+    }
+}
+
+body {
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+        background-image: url(../../assets/img/prev.png);
+    }
+
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+        background-image: url(../../assets/img/next.png);
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #d1d2d4;
+    }
+
+    .swiper-pagination-bullet {
+        background: #e0e0e0;
+    }
+}

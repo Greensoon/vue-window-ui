@@ -1,0 +1,91 @@
+.mu-instance-list {
+    .mil-title {
+        display: inline-block;
+        font-size: 12px;
+        padding-left: 8px;
+        border-left: 2px solid #88b7e0;
+        vertical-align: top;
+        margin-top: 8px;
+    }
+
+    .mil-tag-list {
+        max-width: 760px;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-top: 0px;
+    }
+
+    .mil-tag-item {
+        display: block;
+        float: left;
+        vertical-align: middle;
+
+        &.mil-tag-active {
+            .mil-tag-link {
+                background: #546478;
+                color: #fff;
+            }
+        }
+    }
+
+    .mil-tag-link {
+        display: block;
+        font-size: 12px;
+        background: #ccc;
+        height: 32px;
+        line-height: 20px;
+        padding: 6px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        color: #333;
+
+        &:hover {
+            background-color: fadeOut(#ccc, 10%);
+        }
+    }
+
+    .mil-top {
+        min-height: 70px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #DDD;
+    }
+
+    .mil-form {
+        width: 500px;
+        
+        .mil-input {
+            input {
+                height: 35px;
+                line-height: 35px;
+            }
+        }
+    }
+
+    .mil-content {
+        padding-top: 20px;
+    }
+
+    .mil-link {
+        margin-right: 15px;
+        font-size: 12px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+
+    .mil-result {
+        margin-top: 10px;
+        border: 1px solid #ddd;
+
+        .el-table th {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 12px;
+            background: #f5f6fa;
+        }
+    }
+
+
+}

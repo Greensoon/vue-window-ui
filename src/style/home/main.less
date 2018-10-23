@@ -1,0 +1,57 @@
+.mu-home {
+    height: 100%;
+    &-container {
+        height: 100%;
+    }
+
+    &-head {
+        background: @home-top-bg;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    &-aside {
+        background: @home-menuwrap-bg;
+        max-width: 180px;
+        // width: auto!important;
+    }
+
+    .mu-sperator {
+        &-right {
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 100%;
+                background: #2a2f32;
+                transform: scaleX(0.5) scaleY(0.5);
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+
+    &-breadcrumb {
+        float: left;
+        height: 50px;
+        line-height: 50px;
+
+        a {
+            &:hover {
+                background-color: @home-top-hoverbg;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+    .el-header {
+        padding: 0;
+    }
+}
