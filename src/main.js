@@ -44,21 +44,6 @@ import $ from 'jquery'
 import { getLastActiveTime, getToken, setToken, setLastActiveTime } from './utils/auth'
 import { freshToken } from './apis/put'
 
-$(document.body).click(_ => {
-	var _now = new Date().getTime()
-	var _last = getLastActiveTime() * 1
-
-	if(_now - _last >= 5 * 1000 * 60 ) {
-		freshToken({jwt_token: getToken()})
-			.then(json => {
-				if(json.code == 200) {
-					setToken(json.result.jwt_token)
-				}
-			})
-	}
-	setLastActiveTime(new Date().getTime())
-})
-
 /*
  * 检查权限
  */
