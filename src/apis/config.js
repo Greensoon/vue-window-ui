@@ -1,14 +1,14 @@
 //端口
 const PORTS = {
-    USER_ROOT: 10002, //用户相关
-    PERM_ROOT: 10003, //权限相关
-    SERVER_ROOT: 18888, //服务器相关
-    QUFU_SOCKET_ROOT: 18102, //区服socket
-    QUFU_ROOT: 18100, //区服
-    WARN_ROOT: 10004, //预警
-    INSTALL_ROOT: 18100, //应用部署
-    INSTALL_SOCKET_ROOT: 18101, //应用部署socket,
-    GAME_ROOT: 10005, //游戏相关接口
+    USER_ROOT: 0, //用户相关
+    PERM_ROOT: 1, //权限相关
+    SERVER_ROOT: 2, //服务器相关
+    QUFU_SOCKET_ROOT: 3, //区服socket
+    QUFU_ROOT: 4, //区服
+    WARN_ROOT: 5, //预警
+    INSTALL_ROOT: 6, //应用部署
+    INSTALL_SOCKET_ROOT: 7, //应用部署socket,
+    GAME_ROOT: 8, //游戏相关接口
 }
 
 //测试地址
